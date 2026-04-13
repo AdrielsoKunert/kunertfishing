@@ -2,7 +2,7 @@
   {
     "nombre": "LORI BLACK 115",
     "descripcion": "Meia-água · Ratlin · Cores metalizadas",
-    "precio": 49.90,
+    "precio": 100.000,
     "etiqueta": "HOT",
     "color": "#fff",
     "imagen": "img/LoriBlack105.png"
@@ -10,17 +10,17 @@
   {
     "nombre": "BRUTAL 115 ZN",
     "descripcion": "Ass. Zé Neto · Transferência de peso",
-    "precio": 89.90,
+    "precio": 100.000,
     "etiqueta": "NOVO",
     "color": "#fff",
-    "imagen": "https://cdn-icons-png.flaticon.com/512/616/616430.png"
+    "imagen": "img/brutal-95-zn-chama.png"
   },
   {
-    "nombre": "BRUTAL 115 ZN",
-    "descripcion": "Ass. Zé Neto · Transferência de peso",
-    "precio": 89.90,
+    "nombre": "LORI-X 90 BACA",
+    "descripcion": "Ass. Fabio Baca·",
+    "precio": 100.000,
     "etiqueta": "NOVO",
     "color": "#fff",
-    "imagen": "https://cdn-icons-png.flaticon.com/512/616/616430.png"
+    "imagen": "img/lori-x-05.png"
   }
 ]
