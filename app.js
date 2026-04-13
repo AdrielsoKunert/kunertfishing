@@ -15,7 +15,7 @@ fetch("productos.json")
         <div class="card-body">
           <h4>${prod.nombre}</h4>
           <p>${prod.descripcion}</p>
-          <div class="price"> Gs. ${prod.precio.toFixed(2)}</div>
+          <div class="price"> Gs. ${prod.precio}</div>
           <button>VER MAIS</button>
         </div>
       `;
@@ -23,3 +23,4 @@ fetch("productos.json")
       contenedor.appendChild(card);
     });
   });
+//   <div class="price"> Gs. ${prod.precio.toFixed(2)}</div>
