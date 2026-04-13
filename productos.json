@@ -21,7 +21,7 @@
     "precio": 85.000,
     "etiqueta": "SUPERFÍCIE",
     "color": "#fff",
-    "imagen": "img/lori-x-18.png"
+    "imagen": "img/lori-x-19.png"
   },
   {
     "nombre": "Lori-X 90",
@@ -125,7 +125,7 @@
     "precio": 85.000,
     "etiqueta": "SUPERFÍCIE",
     "color": "#fff",
-    "imagen": "img/laker-Iron.png"
+    "imagen": "img/laker-iron.png"
   },
   {
     "nombre": "  Laker 55",
@@ -133,15 +133,15 @@
     "precio": 85.000,
     "etiqueta": "SUPERFÍCIE",
     "color": "#fff",
-    "imagen": "img/laker-Iron.png"
+    "imagen": "img/laker-iron.png"
   },
   {
     "nombre": "Laker 55",
-    "descripcion": "Color Skeleton ",
+    "descripcion": "Color skeleton ",
     "precio": 85.000,
     "etiqueta": "SUPERFÍCIE",
     "color": "#fff",
-    "imagen": "img/laker-Skeleton.png"
+    "imagen": "img/laker-skeleton.png"
   },
   {
     "nombre": "UP X",
@@ -173,6 +173,6 @@
     "precio": 85.000,
     "etiqueta": "SUPERFÍCIE",
     "color": "#fff",
-    "imagen": "img/brutal-95-zn-Sunset.png"
+    "imagen": "img/brutal-95-zn-sunset.png"
   }
 ]
