@@ -1,26 +1,180 @@
 [
   {
-    "nombre": "LORI BLACK 115",
-    "descripcion": "Meia-água · Ratlin · Cores metalizadas",
-    "precio": 100.000,
-    "etiqueta": "HOT",
+    "nombre": "Jig Anti Fabio Baca 12gr -Sunset",
+    "descripcion": "Jig Antienrosco",
+    "precio": 60.000,
+    "etiqueta": "JIGS ANTI",
     "color": "#fff",
-    "imagen": "img/LoriBlack105.png"
+    "imagen": ""
   },
   {
-    "nombre": "BRUTAL 115 ZN",
-    "descripcion": "Ass. Zé Neto · Transferência de peso",
-    "precio": 100.000,
-    "etiqueta": "NOVO",
+    "nombre": "Lori-X 90",
+    "descripcion": "SUPERFÍCIE color 05",
+    "precio": 85.000,
+    "etiqueta": "SUPERFÍCIE",
     "color": "#fff",
-    "imagen": "img/brutal-95-zn-chama.png"
+    "imagen": ""
   },
   {
-    "nombre": "LORI-X 90 BACA",
-    "descripcion": "Ass. Fabio Baca·",
-    "precio": 100.000,
-    "etiqueta": "NOVO",
+    "nombre": "Lori-X 90",
+    "descripcion": "SUPERFÍCIE color 18",
+    "precio": 85.000,
+    "etiqueta": "SUPERFÍCIE",
     "color": "#fff",
-    "imagen": "img/lori-x-05.png"
+    "imagen": ""
+  },
+  {
+    "nombre": "Lori-X 90",
+    "descripcion": "SUPERFÍCIE color 19",
+    "precio": 85.000,
+    "etiqueta": "SUPERFÍCIE",
+    "color": "#fff",
+    "imagen": ""
+  },
+  {
+    "nombre": "Lori-X 90",
+    "descripcion": "SUPERFÍCIE color 20",
+    "precio": 85.000,
+    "etiqueta": "SUPERFÍCIE",
+    "color": "#fff",
+    "imagen": ""
+  },
+  {
+    "nombre": "MAGNET 90",
+    "descripcion": "Color 18",
+    "precio": 85.000,
+    "etiqueta": "SUPERFÍCIE",
+    "color": "#fff",
+    "imagen": ""
+  },
+  {
+    "nombre": "MAGNET 90",
+    "descripcion": "Color 54",
+    "precio": 85.000,
+    "etiqueta": "SUPERFÍCIE",
+    "color": "#fff",
+    "imagen": ""
+  },
+  {
+    "nombre": "MAGNET 90",
+    "descripcion": "Color 55",
+    "precio": 85.000,
+    "etiqueta": "SUPERFÍCIE",
+    "color": "#fff",
+    "imagen": ""
+  },
+  {
+    "nombre": "FATAL 90",
+    "descripcion": "color 18",
+    "precio": 85.000,
+    "etiqueta": "SUPERFÍCIE",
+    "color": "#fff",
+    "imagen": ""
+  },
+  {
+    "nombre": "FATAL 90",
+    "descripcion": "Color 42",
+    "precio": 85.000,
+    "etiqueta": "SUPERFÍCIE",
+    "color": "#fff",
+    "imagen": ""
+  },
+   - 
+  {
+    "nombre": "FLASH 75",
+    "descripcion": "Color 1314",
+    "precio": 85.000,
+    "etiqueta": "SUPERFÍCIE",
+    "color": "#fff",
+    "imagen": ""
+  },
+  {
+    "nombre": "FLASH 75",
+    "descripcion": "Color 1342",
+    "precio": 85.000,
+    "etiqueta": "SUPERFÍCIE",
+    "color": "#fff",
+    "imagen": ""
+  },
+  {
+    "nombre": "LORI BLACK 80",
+    "descripcion": "Color 105",
+    "precio": 85.000,
+    "etiqueta": "SUPERFÍCIE",
+    "color": "#fff",
+    "imagen": ""
+  },
+  {
+    "nombre": "LORI BLACK 80",
+    "descripcion": "Color 112",
+    "precio": 85.000,
+    "etiqueta": "SUPERFÍCIE",
+    "color": "#fff",
+    "imagen": ""
+  },
+  {
+    "nombre": "Lori Face 65",
+    "descripcion": "Color CHAAAMA",
+    "precio": 85.000,
+    "etiqueta": "SUPERFÍCIE",
+    "color": "#fff",
+    "imagen": ""
+  },
+  {
+    "nombre": "Lori Face 65",
+    "descripcion": "Color TEQUILA",
+    "precio": 85.000,
+    "etiqueta": "SUPERFÍCIE",
+    "color": "#fff",
+    "imagen": ""
+  },
+  {
+    "nombre": "  Laker 55",
+    "descripcion": "Color Iron ",
+    "precio": 85.000,
+    "etiqueta": "SUPERFÍCIE",
+    "color": "#fff",
+    "imagen": ""
+  },
+
+  {
+    "nombre": "Laker 55",
+    "descripcion": "Color Skeleton ",
+    "precio": 85.000,
+    "etiqueta": "SUPERFÍCIE",
+    "color": "#fff",
+    "imagen": ""
+  },
+  {
+    "nombre": "UP X",
+    "descripcion": "Color LIMA ",
+    "precio": 85.000,
+    "etiqueta": "SUPERFÍCIE",
+    "color": "#fff",
+    "imagen": ""
+  },
+  {
+    "nombre": " UP X",
+    "descripcion": "Color SOLAR ",
+    "precio": 85.000,
+    "etiqueta": "SUPERFÍCIE",
+    "color": "#fff",
+    "imagen": ""
+  },
+  {
+    "nombre": " Brutal 95 ZN",
+    "descripcion": "Color Chaaama ",
+    "precio": 85.000,
+    "etiqueta": "SUPERFÍCIE",
+    "color": "#fff",
+    "imagen": ""
+  },
+  {
+    "nombre": "Brutal 95 ZN",
+    "descripcion": "Color Sunset ",
+    "precio": 85.000,
+    "etiqueta": "SUPERFÍCIE",
+    "color": "#fff",
+    "imagen": ""
   }
 ]
