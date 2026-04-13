@@ -5,7 +5,7 @@
     "precio": 60.000,
     "etiqueta": "JIGS ANTI",
     "color": "#fff",
-    "imagen": ""
+    "imagen": "img/x-jig-sunset.png"
   },
   {
     "nombre": "Lori-X 90",
@@ -13,7 +13,7 @@
     "precio": 85.000,
     "etiqueta": "SUPERFÍCIE",
     "color": "#fff",
-    "imagen": ""
+    "imagen": "img/lori-x-05.png"
   },
   {
     "nombre": "Lori-X 90",
@@ -21,7 +21,7 @@
     "precio": 85.000,
     "etiqueta": "SUPERFÍCIE",
     "color": "#fff",
-    "imagen": ""
+    "imagen": "img/lori-x-18.png"
   },
   {
     "nombre": "Lori-X 90",
@@ -29,7 +29,7 @@
     "precio": 85.000,
     "etiqueta": "SUPERFÍCIE",
     "color": "#fff",
-    "imagen": ""
+    "imagen": "img/lori-x-19.png"
   },
   {
     "nombre": "Lori-X 90",
@@ -37,7 +37,7 @@
     "precio": 85.000,
     "etiqueta": "SUPERFÍCIE",
     "color": "#fff",
-    "imagen": ""
+    "imagen": "img/lori-x-20.png"
   },
   {
     "nombre": "MAGNET 90",
@@ -45,7 +45,7 @@
     "precio": 85.000,
     "etiqueta": "SUPERFÍCIE",
     "color": "#fff",
-    "imagen": ""
+    "imagen": "img/magnet-18.png"
   },
   {
     "nombre": "MAGNET 90",
@@ -53,7 +53,7 @@
     "precio": 85.000,
     "etiqueta": "SUPERFÍCIE",
     "color": "#fff",
-    "imagen": ""
+    "imagen": "img/magnet-54.png"
   },
   {
     "nombre": "MAGNET 90",
@@ -61,7 +61,7 @@
     "precio": 85.000,
     "etiqueta": "SUPERFÍCIE",
     "color": "#fff",
-    "imagen": ""
+    "imagen": "img/magnet-55.png"
   },
   {
     "nombre": "FATAL 90",
@@ -69,7 +69,7 @@
     "precio": 85.000,
     "etiqueta": "SUPERFÍCIE",
     "color": "#fff",
-    "imagen": ""
+    "imagen": "img/fatal-18.png"
   },
   {
     "nombre": "FATAL 90",
@@ -77,23 +77,23 @@
     "precio": 85.000,
     "etiqueta": "SUPERFÍCIE",
     "color": "#fff",
-    "imagen": ""
+    "imagen": "img/fatal-42.png"
   },
   {
     "nombre": "FLASH 75",
-    "descripcion": "Color 1314",
+    "descripcion": "Color 14",
     "precio": 85.000,
     "etiqueta": "SUPERFÍCIE",
     "color": "#fff",
-    "imagen": ""
+    "imagen": "img/flash-14.png"
   },
   {
     "nombre": "FLASH 75",
-    "descripcion": "Color 1342",
+    "descripcion": "Color 42",
     "precio": 85.000,
     "etiqueta": "SUPERFÍCIE",
     "color": "#fff",
-    "imagen": ""
+    "imagen": "img/flash-42.png"
   },
   {
     "nombre": "LORI BLACK 80",
@@ -101,7 +101,7 @@
     "precio": 85.000,
     "etiqueta": "SUPERFÍCIE",
     "color": "#fff",
-    "imagen": ""
+    "imagen": "img/LoriBlack105.png"
   },
   {
     "nombre": "LORI BLACK 80",
@@ -109,7 +109,7 @@
     "precio": 85.000,
     "etiqueta": "SUPERFÍCIE",
     "color": "#fff",
-    "imagen": ""
+    "imagen": "img/Lori Black112.png"
   },
   {
     "nombre": "Lori Face 65",
@@ -117,7 +117,7 @@
     "precio": 85.000,
     "etiqueta": "SUPERFÍCIE",
     "color": "#fff",
-    "imagen": ""
+    "imagen": "img/laker-Iron.png"
   },
   {
     "nombre": "Lori Face 65",
@@ -125,7 +125,7 @@
     "precio": 85.000,
     "etiqueta": "SUPERFÍCIE",
     "color": "#fff",
-    "imagen": ""
+    "imagen": "img/laker-Iron.png"
   },
   {
     "nombre": "  Laker 55",
@@ -133,7 +133,7 @@
     "precio": 85.000,
     "etiqueta": "SUPERFÍCIE",
     "color": "#fff",
-    "imagen": ""
+    "imagen": "img/laker-Iron.png"
   },
   {
     "nombre": "Laker 55",
@@ -141,7 +141,7 @@
     "precio": 85.000,
     "etiqueta": "SUPERFÍCIE",
     "color": "#fff",
-    "imagen": ""
+    "imagen": "img/laker-Skeleton.png"
   },
   {
     "nombre": "UP X",
@@ -149,7 +149,7 @@
     "precio": 85.000,
     "etiqueta": "SUPERFÍCIE",
     "color": "#fff",
-    "imagen": ""
+    "imagen": "img/up-x-110-lima.png"
   },
   {
     "nombre": " UP X",
@@ -157,7 +157,7 @@
     "precio": 85.000,
     "etiqueta": "SUPERFÍCIE",
     "color": "#fff",
-    "imagen": ""
+    "imagen": "img/up-x-110-solar.png"
   },
   {
     "nombre": " Brutal 95 ZN",
@@ -165,7 +165,7 @@
     "precio": 85.000,
     "etiqueta": "SUPERFÍCIE",
     "color": "#fff",
-    "imagen": ""
+    "imagen": "img/brutal-95-zn-chama.png"
   },
   {
     "nombre": "Brutal 95 ZN",
@@ -173,6 +173,6 @@
     "precio": 85.000,
     "etiqueta": "SUPERFÍCIE",
     "color": "#fff",
-    "imagen": ""
+    "imagen": "img/brutal-95-zn-Sunset.png"
   }
 ]
