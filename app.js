@@ -10,7 +10,7 @@ fetch("productos.json")
       card.innerHTML = `
         <div class="card-top" style="background:${prod.color}">
           <span class="tag">${prod.etiqueta}</span>
-          <img src="${prod.imagen}" alt="">
+          <img src="${prod.imagen}" alt=""  onclick="abrirModal(this)">
         </div>
         <div class="card-body">
           <h4>${prod.nombre}</h4>
