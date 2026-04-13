@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kunert Fishing - Accesorios de Pesca</title>
+  <style>
+    body { font-family: 'Arial', sans-serif; margin: 0; padding: 0; background: #f8f8f8; color: #333; }
+    header { background: #003366; color: white; padding: 15px 0; text-align: center; }
+    .logo { max-width: 380px; }
+    .hero { background: linear-gradient(rgba(0,30,80,0.75), rgba(0,30,80,0.75)), url('https://source.unsplash.com/random/1600x900/?bass-fishing') center/cover; color: white; padding: 120px 20px; text-align: center; }
+    .hero h1 { font-size: 3.2em; margin: 0; }
+    .section { padding: 70px 20px; max-width: 1200px; margin: 0 auto; }
+    .products-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
+    .product-card { background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1); transition: 0.3s; }
+    .product-card:hover { transform: translateY(-10px); }
+    .product-card img { width: 100%; height: 220px; object-fit: cover; }
+    .product-info { padding: 20px; text-align: center; }
+    .price { font-size: 1.4em; color: #003366; font-weight: bold; }
+    .btn { background: #003366; color: white; padding: 12px 25px; border: none; border-radius: 6px; cursor: pointer; font-weight: bold; margin-top: 10px; }
+    .btn:hover { background: #002244; }
+    .modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); align-items: center; justify-content: center; }
+    .modal-content { background: white; max-width: 600px; width: 90%; border-radius: 10px; padding: 20px; }
+    footer { background: #003366; color: white; text-align: center; padding: 40px 20px; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="TU-LOGO-KUNERT.png" alt="Kunert Fishing" class="logo"> <!-- Reemplaza con tu imagen del logo -->
+  </header>
+
+  <section class="hero">
+    <h1>Kunert Fishing Accessories</h1>
+    <p style="font-size: 1.5em; max-width: 700px; margin: 20px auto;">Calidad premium para pescadores exigentes.<br>Líneas, anzuelos, iscas y más.</p>
+    <button class="btn" onclick="document.getElementById('productos').scrollIntoView({behavior: 'smooth'})">Ver productos</button>
+  </section>
+
+  <section id="productos" class="section">
+    <h2 style="text-align: center; margin-bottom: 50px;">Nuestros Productos</h2>
+    
+    <div class="products-grid">
+
+      <!-- Producto 1 -->
+      <div class="product-card">
+        <img src="https://source.unsplash.com/random/300x220/?fishing-line" alt="Línea Trenzada">
+        <div class="product-info">
+          <h3>Línea Trenzada Kunert 8 Hilos</h3>
+          <p class="price">R$ 89,90</p>
+          <p>Alta resistencia y sensibilidad. 100m - Varios colores.</p>
+          <button class="btn" onclick="verProducto(1)">Ver detalle</button>
+        </div>
+      </div>
+
+      <!-- Producto 2 -->
+      <div class="product-card">
+        <img src="https://source.unsplash.com/random/300x220/?fishing-hook" alt="Anzuelos">
+        <div class="product-info">
+          <h3>Anzuelos Kunert Japoneses</h3>
+          <p class="price">R$ 29,90</p>
+          <p>Paquete con 50 unidades. Acero templado premium.</p>
+          <button class="btn" onclick="verProducto(2)">Ver detalle</button>
+        </div>
+      </div>
+
+      <!-- Agrega más tarjetas aquí siguiendo el mismo patrón -->
+
+    </div>
+  </section>
+
+  <!-- Modal para ver detalle -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span onclick="cerrarModal()" style="float:right; font-size:28px; cursor:pointer;">&times;</span>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <footer>
+    <p><strong>Kunert Fishing</strong> © 2026 • Accesorios para pesca deportiva</p>
+    <p>Instagram: @kunertfishing | Contacto: info@kunertfishing.com</p>
+  </footer>
+
+  <script>
+    function verProducto(id) {
+      let html = '';
+      if (id === 1) {
+        html = `<h2>Línea Trenzada Kunert 8 Hilos</h2>
+                <img src="https://source.unsplash.com/random/600x400/?braided-line" style="width:100%; border-radius:8px;">
+                <p>Descripción completa: Resistencia superior, cero memoria, excelente para agua dulce y salada. Disponible en 10lb a 80lb.</p>
+                <p class="price">R$ 89,90</p>
+                <button class="btn" style="width:100%;">Agregar al carrito</button>`;
+      } else if (id === 2) {
+        html = `<h2>Anzuelos Kunert</h2>
+                <img src="https://source.unsplash.com/random/600x400/?fishing-hooks" style="width:100%; border-radius:8px;">
+                <p>Acero japonés de alto carbono. Máxima penetración y durabilidad. Paquete económico.</p>
+                <p class="price">R$ 29,90</p>
+                <button class="btn" style="width:100%;">Agregar al carrito</button>`;
+      }
+      document.getElementById('modal-body').innerHTML = html;
+      document.getElementById('modal').style.display = 'flex';
+    }
+
+    function cerrarModal() {
+      document.getElementById('modal').style.display = 'none';
+    }
+  </script>
+</body>
+</html>
