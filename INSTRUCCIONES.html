@@ -1,0 +1,118 @@
+<!-- ═══════════════════════════════════════════════════════════
+     INSTRUCCIONES DE INTEGRACIÓN — Kunert Fishing Torneos
+     ═══════════════════════════════════════════════════════════
+
+  ARCHIVOS A AGREGAR EN TU PROYECTO:
+    ✅ torneos.json     → raíz del proyecto (mismo nivel que index.html)
+    ✅ torneos.js       → carpeta js/ o raíz
+    ✅ torneos.css      → carpeta css/ o raíz
+    📁 img/torneos/     → carpeta para las fotos de torneos
+    📁 img/torneos/placeholder.jpg → imagen de respaldo si falta una foto
+
+  ═══════════════════════════════════════════════════════════ -->
+
+
+<!-- ── 1. En el <head> del index.html, agregar: ──────────── -->
+
+<link rel="stylesheet" href="torneos.css" />
+
+
+<!-- ── 2. Modificar los links del NAV así: ───────────────── -->
+
+<ul class="nav-menu">
+  <li><a href="#" onclick="showSection('inicio', this); return false;" class="nav-active">Início</a></li>
+  <li><a href="#" onclick="showSection('iscas', this); return false;">Iscas</a></li>
+  <li><a href="#" onclick="showSection('torneos', this); return false;">Torneos</a></li>
+</ul>
+
+
+<!-- ── 3. Envolver la sección de productos existente: ─────── -->
+<!--      Agregar id="section-inicio" a tu <section class="products"> -->
+
+<section id="section-inicio" class="products">
+  <div class="grid" id="productos"></div>
+</section>
+
+
+<!-- ── 4. Agregar la sección de torneos DESPUÉS de products: ─ -->
+
+<section id="section-torneos" style="display:none;">
+  <div id="torneos-contenido">
+    <!-- El contenido se genera automáticamente desde torneos.json -->
+  </div>
+</section>
+
+
+<!-- ── 5. Antes del </body>, agregar los scripts: ──────────── -->
+
+<script src="torneos.js"></script>
+<script>
+  // ── Navegación entre secciones ──────────────────────────────
+  let torneosYaCargados = false;
+
+  function showSection(id, el) {
+    // Ocultar todas las secciones
+    document.getElementById('section-inicio').style.display = 'none';
+    document.getElementById('section-torneos').style.display = 'none';
+
+    // Mostrar la sección seleccionada
+    document.getElementById('section-' + id).style.display = 'block';
+
+    // Marcar link activo en el nav
+    document.querySelectorAll('.nav-menu a').forEach(a => a.classList.remove('nav-active'));
+    el.classList.add('nav-active');
+
+    // Cargar torneos solo la primera vez que se entra
+    if (id === 'torneos' && !torneosYaCargados) {
+      cargarTorneos();
+      torneosYaCargados = true;
+    }
+  }
+</script>
+
+
+<!-- ── 6. En estilos.css, agregar para el link activo: ─────── -->
+<!--
+  .nav-menu a.nav-active {
+    color: #1a4a8a;
+    border-bottom: 2px solid #1a4a8a;
+  }
+-->
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     CÓMO AGREGAR UN NUEVO TORNEO
+     ═══════════════════════════════════════════════════════════
+
+  Solo editá torneos.json y agregá un objeto al array "proximos":
+
+  {
+    "id": 3,
+    "nombre": "Nombre del Torneo",
+    "fecha": "2026-08-20",         ← formato YYYY-MM-DD
+    "lugar": "Ciudad, Paraguay",
+    "categorias": ["Dorado", "Pacú"],
+    "descripcion": "Descripción breve del evento.",
+    "inscripcion_tipo": "whatsapp",
+    "telefono": "595973585691",    ← sin + ni espacios
+    "premio": "Trofeo + Premio",
+    "cupos": 50,
+    "imagen": "img/torneos/nombre-torneo.jpg"
+  }
+
+  Cuando el torneo termine, movelo al array "resultados" y agregá el podio:
+
+  {
+    "id": 3,
+    "nombre": "Nombre del Torneo",
+    "fecha": "2026-08-20",
+    "lugar": "Ciudad, Paraguay",
+    "imagen": "img/torneos/nombre-torneo.jpg",
+    "podio": [
+      { "puesto": 1, "nombre": "Ganador", "detalle": "14.2 kg" },
+      { "puesto": 2, "nombre": "Segundo", "detalle": "12.0 kg" },
+      { "puesto": 3, "nombre": "Tercero", "detalle": "10.5 kg" }
+    ]
+  }
+
+  ═══════════════════════════════════════════════════════════ -->

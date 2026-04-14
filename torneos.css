@@ -1,0 +1,351 @@
+/* ─── TORNEOS.CSS ─────────────────────────────────────────────
+   Estilos para la sección de torneos de Kunert Fishing
+   Agregar este @import en estilos.css o linkear en el <head>
+───────────────────────────────────────────────────────────── */
+
+/* ── Contenedor principal ── */
+#section-torneos {
+  padding: 48px 24px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* ── Título de subsección ── */
+.torneos-seccion {
+  margin-bottom: 56px;
+}
+
+.torneos-seccion-title {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 22px;
+  letter-spacing: 4px;
+  color: #0a1628;
+  margin-bottom: 28px;
+}
+
+.seccion-linea {
+  flex: 1;
+  height: 1px;
+  background: #0a1628;
+  opacity: 0.15;
+}
+
+/* ── Grid de tarjetas ── */
+.torneos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 24px;
+}
+
+/* ── Tarjeta base ── */
+.torneo-card {
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid rgba(0,0,0,0.08);
+  background: #fff;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.torneo-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+}
+
+/* ── Imagen ── */
+.torneo-img-wrap {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+  background: #e8eef5;
+}
+
+.torneo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ── Badge de fecha (próximos) ── */
+.torneo-fecha-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: #0a1628;
+  color: white;
+  border-radius: 10px;
+  padding: 8px 12px;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.fecha-dia {
+  display: block;
+  font-size: 26px;
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 1px;
+}
+
+.fecha-mes {
+  display: block;
+  font-size: 11px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  color: #e8a020;
+}
+
+.fecha-anio {
+  display: block;
+  font-size: 10px;
+  color: rgba(255,255,255,0.6);
+}
+
+/* ── Overlay resultados ── */
+.resultado-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(10, 22, 40, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.resultado-label {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 20px;
+  letter-spacing: 4px;
+  color: white;
+  border: 1.5px solid rgba(255,255,255,0.6);
+  padding: 6px 16px;
+  border-radius: 4px;
+}
+
+/* ── Cuerpo de tarjeta ── */
+.torneo-body {
+  padding: 20px;
+}
+
+.torneo-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.torneo-nombre {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #0a1628;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.torneo-lugar {
+  font-size: 13px;
+  color: #666;
+  margin: 0 0 10px;
+}
+
+.torneo-desc {
+  font-size: 14px;
+  color: #444;
+  line-height: 1.5;
+  margin: 0 0 14px;
+}
+
+/* ── Categorías ── */
+.torneo-cats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+
+.cat-tag {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 3px 10px;
+  border-radius: 20px;
+  background: #e8f0fb;
+  color: #1a4a8a;
+  text-transform: uppercase;
+}
+
+/* ── Footer de tarjeta ── */
+.torneo-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  border-top: 1px solid rgba(0,0,0,0.06);
+  padding-top: 14px;
+}
+
+.torneo-premio {
+  font-size: 13px;
+  color: #555;
+  font-weight: 500;
+}
+
+/* ── Botón inscripción ── */
+.btn-inscribir {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #25d366;
+  color: white;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 24px;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.btn-inscribir:hover {
+  background: #1da851;
+  transform: scale(1.03);
+}
+
+/* ── Badges de estado ── */
+.badge {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  padding: 3px 10px;
+  border-radius: 20px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.badge-open {
+  background: #e1f5ee;
+  color: #0f6e56;
+}
+
+.badge-urgente {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.badge-cerrado {
+  background: #f1f1f1;
+  color: #888;
+}
+
+/* ── Podio ── */
+.podio {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.podio-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  background: #f7f9fc;
+}
+
+.podio-1 { background: #fffbea; border-left: 3px solid #f5c518; }
+.podio-2 { background: #f5f7fa; border-left: 3px solid #adb5bd; }
+.podio-3 { background: #fdf5f0; border-left: 3px solid #cd7f32; }
+
+.podio-medalla {
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+.podio-nombre {
+  font-size: 14px;
+  font-weight: 600;
+  color: #0a1628;
+  flex: 1;
+}
+
+.podio-detalle {
+  font-size: 13px;
+  color: #666;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* ── Skeleton loader ── */
+.skeleton-card {
+  pointer-events: none;
+}
+
+.skeleton {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.4s infinite;
+  border-radius: 8px;
+}
+
+.skeleton-img {
+  width: 100%;
+  height: 200px;
+  border-radius: 0;
+}
+
+.skeleton-title {
+  height: 22px;
+  width: 70%;
+  margin-bottom: 12px;
+}
+
+.skeleton-text {
+  height: 14px;
+  width: 90%;
+  margin-bottom: 8px;
+}
+
+.skeleton-text.short {
+  width: 50%;
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+/* ── Estados vacío/error ── */
+.torneos-empty,
+.torneos-error {
+  text-align: center;
+  padding: 48px;
+  color: #888;
+  font-size: 15px;
+}
+
+/* ── Responsive ── */
+@media (max-width: 600px) {
+  .torneos-grid {
+    grid-template-columns: 1fr;
+  }
+
+  #section-torneos {
+    padding: 32px 16px;
+  }
+
+  .torneo-footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .btn-inscribir {
+    width: 100%;
+    justify-content: center;
+  }
+}
