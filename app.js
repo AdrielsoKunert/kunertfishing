@@ -18,8 +18,9 @@ fetch("productos.json")
           <h4>${prod.nombre}</h4>
           <p>${prod.descripcion}</p>
           <div class="price"> Gs. ${prod.precio.toFixed(3)}</div>
-         <a class="btn-whatsapp" 
-             href="intent://send?phone=5959735856918&text=${mensaje}#Intent;scheme=whatsapp;package=com.whatsapp;end">
+        <a class="btn-whatsapp" 
+             href="https://wa.me/595973585691?text=${mensaje}"
+             target="_blank">
             📦 Pedido
           </a>
         </div>
