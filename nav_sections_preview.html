@@ -1,0 +1,107 @@
+
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: var(--font-sans); }
+.topbar { background: #0a1628; color: #ccc; font-size: 12px; display: flex; justify-content: space-between; padding: 6px 24px; }
+nav { display: flex; align-items: center; justify-content: space-between; padding: 12px 24px; border-bottom: 0.5px solid var(--color-border-tertiary); }
+.nav-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; color: inherit; }
+.logo-text { font-size: 22px; font-weight: 700; letter-spacing: 2px; }
+.logo-sub { font-size: 11px; color: var(--color-text-secondary); letter-spacing: 3px; }
+.nav-menu { display: flex; gap: 24px; list-style: none; }
+.nav-menu a { text-decoration: none; font-size: 13px; letter-spacing: 1px; font-weight: 500; color: var(--color-text-secondary); cursor: pointer; padding-bottom: 4px; }
+.nav-menu a.active { color: var(--color-text-primary); border-bottom: 2px solid #1a4a8a; }
+.nav-menu a:hover { color: var(--color-text-primary); }
+.section { padding: 32px 24px; display: none; }
+.section.active { display: block; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 16px; }
+.card { border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-lg); padding: 12px; background: var(--color-background-primary); }
+.card-img { height: 100px; background: var(--color-background-secondary); border-radius: var(--border-radius-md); margin-bottom: 10px; display: flex; align-items: center; justify-content: center; font-size: 32px; }
+.card-name { font-size: 13px; font-weight: 500; margin-bottom: 4px; }
+.card-price { font-size: 13px; color: var(--color-text-secondary); }
+.torneo-card { border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-lg); padding: 20px; background: var(--color-background-primary); margin-bottom: 16px; display: flex; gap: 20px; align-items: center; }
+.torneo-date { background: #0a1628; color: white; border-radius: var(--border-radius-md); padding: 10px 14px; text-align: center; min-width: 60px; }
+.torneo-date .day { font-size: 22px; font-weight: 700; }
+.torneo-date .month { font-size: 11px; letter-spacing: 1px; }
+.torneo-info h3 { font-size: 15px; font-weight: 500; margin-bottom: 4px; }
+.torneo-info p { font-size: 13px; color: var(--color-text-secondary); }
+.badge { display: inline-block; font-size: 11px; padding: 2px 8px; border-radius: 20px; margin-top: 6px; }
+.badge-open { background: #e1f5ee; color: #0f6e56; }
+.badge-soon { background: #faeeda; color: #854f0b; }
+.section-title { font-size: 11px; letter-spacing: 2px; color: var(--color-text-secondary); margin-bottom: 20px; font-weight: 500; }
+</style>
+
+<div class="topbar">
+  <span>Hernandarias | Paraguay</span>
+  <span>Desde 2026 — Qualidade Premium em Acessórios de Pesca</span>
+  <span>(595) 973 585-691</span>
+</div>
+
+<nav>
+  <div class="nav-logo">
+    <div style="width:36px;height:36px;background:#0a1628;border-radius:50%;display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:14px;">K</div>
+    <div>
+      <div class="logo-text">KUNERT</div>
+      <div class="logo-sub">FISHING</div>
+    </div>
+  </div>
+  <ul class="nav-menu">
+    <li><a onclick="showSection('inicio', this)" class="active">Início</a></li>
+    <li><a onclick="showSection('iscas', this)">Iscas</a></li>
+    <li><a onclick="showSection('torneos', this)">Torneos</a></li>
+  </ul>
+</nav>
+
+<div id="inicio" class="section active">
+  <div class="section-title">DESTAQUES</div>
+  <div class="grid">
+    <div class="card"><div class="card-img">🎣</div><div class="card-name">Lori-X 90 - Color 05</div><div class="card-price">Gs. 0.000</div></div>
+    <div class="card"><div class="card-img">🐠</div><div class="card-name">Jig Anti Fabio 12gr</div><div class="card-price">Gs. 0.000</div></div>
+    <div class="card"><div class="card-img">🎯</div><div class="card-name">Lori-X 90 - Color 18</div><div class="card-price">Gs. 0.000</div></div>
+  </div>
+</div>
+
+<div id="iscas" class="section">
+  <div class="section-title">ISCAS</div>
+  <div class="grid">
+    <div class="card"><div class="card-img">🐟</div><div class="card-name">Lori Black 80</div><div class="card-price">Gs. 85.000</div></div>
+    <div class="card"><div class="card-img">🐠</div><div class="card-name">Brutal 115 ZN</div><div class="card-price">Gs. 150.000</div></div>
+    <div class="card"><div class="card-img">🎣</div><div class="card-name">Lori Face 85</div><div class="card-price">Gs. 95.000</div></div>
+    <div class="card"><div class="card-img">🐡</div><div class="card-name">Girino Spinner</div><div class="card-price">Gs. 70.000</div></div>
+  </div>
+</div>
+
+<div id="torneos" class="section">
+  <div class="section-title">TORNEOS</div>
+  <div class="torneo-card">
+    <div class="torneo-date"><div class="day">18</div><div class="month">MAY</div></div>
+    <div class="torneo-info">
+      <h3>Torneo Río Paraná 2026</h3>
+      <p>Hernandarias — Categoría: Dorado y Surubí</p>
+      <span class="badge badge-open">Inscripciones abiertas</span>
+    </div>
+  </div>
+  <div class="torneo-card">
+    <div class="torneo-date"><div class="day">12</div><div class="month">JUN</div></div>
+    <div class="torneo-info">
+      <h3>Copa Kunert Fishing</h3>
+      <p>Ciudad del Este — Pesca deportiva familiar</p>
+      <span class="badge badge-open">Inscripciones abiertas</span>
+    </div>
+  </div>
+  <div class="torneo-card">
+    <div class="torneo-date"><div class="day">20</div><div class="month">JUL</div></div>
+    <div class="torneo-info">
+      <h3>Gran Campeonato Itaipú</h3>
+      <p>Lago Itaipú — Todas las categorías</p>
+      <span class="badge badge-soon">Próximamente</span>
+    </div>
+  </div>
+</div>
+
+<script>
+function showSection(id, el) {
+  document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+  document.querySelectorAll('.nav-menu a').forEach(a => a.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  el.classList.add('active');
+}
+</script>
