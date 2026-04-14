@@ -6,6 +6,8 @@ fetch("productos.json")
     data.forEach((prod) => {
       const card = document.createElement("div");
       card.className = "card";
+      
+      const mensaje = encodeURIComponent(`🎣 *CONSULTA DE PRODUCTO*\n\n🪝 *Producto:* ${prod.nombre}\n🎨 *Color:* ${prod.descripcion}\n\n¡Hola! Me interesa este producto, ¿está disponible?`);
 
       card.innerHTML = `
         <div class="card-top" style="background:${prod.color}">
