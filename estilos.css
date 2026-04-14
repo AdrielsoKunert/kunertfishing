@@ -99,6 +99,10 @@
     border-bottom: 2px solid transparent;
     transition: all 0.2s;
   }
+ .nav-menu a.active { 
+     color: var(--color-text-primary); 
+     border-bottom: 2px solid #1a4a8a; 
+ }
   .nav-menu a:hover { color: var(--accent2); border-color: var(--accent); }
   .nav-cta {
     background: var(--accent2);
