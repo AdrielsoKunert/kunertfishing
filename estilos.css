@@ -568,7 +568,35 @@
         font-weight: bold;
         margin-top: 10px;
       }
+.btn-whatsapp {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: linear-gradient(135deg, #25D366, #128C7E);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+  margin-top: 10px;
+}
 
+.btn-whatsapp:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6);
+  background: linear-gradient(135deg, #128C7E, #25D366);
+}
+
+.btn-whatsapp svg {
+  width: 18px;
+  height: 18px;
+  fill: white;
+}
   /* ── FOOTER ── */
   footer {
     background: #06101e;
