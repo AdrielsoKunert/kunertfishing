@@ -2,7 +2,7 @@
   {
     "nombre": "Jig Anti Fabio Baca 12gr -Sunset",
     "descripcion": "Jig Antienrosco",
-    "precio": "00.000",
+    "precio": 0,
     "etiqueta": "JIGS ANTI",
     "color": "#fff",
     "imagen": "img/x-jig-sunset.png"
@@ -10,7 +10,7 @@
   {
     "nombre": "Lori-X 90",
     "descripcion": "SUPERFÍCIE color 05",
-    "precio": "00.000",
+    "precio": 0,
     "etiqueta": "SUPERFÍCIE",
     "color": "#fff",
     "imagen": "img/lori-x-05.png"
@@ -18,7 +18,7 @@
   {
     "nombre": "Lori-X 90",
     "descripcion": "SUPERFÍCIE color 18",
-    "precio": "00.000",
+    "precio": 0,
     "etiqueta": "SUPERFÍCIE",
     "color": "#fff",
     "imagen": "img/lori-x-19.png"
@@ -26,7 +26,7 @@
   {
     "nombre": "Lori-X 90",
     "descripcion": "SUPERFÍCIE color 19",
-    "precio": "00.000",
+    "precio": 0,
     "etiqueta": "SUPERFÍCIE",
     "color": "#fff",
     "imagen": "img/lori-x-19.png"
@@ -34,7 +34,7 @@
   {
     "nombre": "Lori-X 90",
     "descripcion": "SUPERFÍCIE color 20",
-    "precio": "00.000",
+    "precio": 0,
     "etiqueta": "SUPERFÍCIE",
     "color": "#fff",
     "imagen": "img/lori-x-20.png"
@@ -42,7 +42,7 @@
   {
     "nombre": "MAGNET 90",
     "descripcion": "Color 18",
-    "precio": "00.000",
+    "precio": 0,
     "etiqueta": "SUPERFÍCIE",
     "color": "#fff",
     "imagen": "img/magnet-18.png"
@@ -50,7 +50,7 @@
   {
     "nombre": "MAGNET 90",
     "descripcion": "Color 54",
-    "precio": "00.000",
+    "precio": 0,
     "etiqueta": "SUPERFÍCIE",
     "color": "#fff",
     "imagen": "img/magnet-54.png"
@@ -58,7 +58,7 @@
   {
     "nombre": "MAGNET 90",
     "descripcion": "Color 55",
-    "precio": "00.000",
+    "precio": 0,
     "etiqueta": "SUPERFÍCIE",
     "color": "#fff",
     "imagen": "img/magnet-55.png"
@@ -66,7 +66,7 @@
   {
     "nombre": "FATAL 90",
     "descripcion": "color 18",
-    "precio": "00.000",
+    "precio": 0,
     "etiqueta": "SUPERFÍCIE",
     "color": "#fff",
     "imagen": "img/fatal-18.png"
@@ -74,7 +74,7 @@
   {
     "nombre": "FATAL 90",
     "descripcion": "Color 42",
-    "precio": "00.000",
+    "precio": 0,
     "etiqueta": "SUPERFÍCIE",
     "color": "#fff",
     "imagen": "img/fatal-42.png"
@@ -82,7 +82,7 @@
   {
     "nombre": "FLASH 75",
     "descripcion": "Color 14",
-    "precio": "00.000",
+    "precio": 0,
     "etiqueta": "SUPERFÍCIE",
     "color": "#fff",
     "imagen": "img/flash-14.png"
@@ -90,7 +90,7 @@
   {
     "nombre": "FLASH 75",
     "descripcion": "Color 42",
-    "precio": "00.000",
+    "precio": 0,
     "etiqueta": "SUPERFÍCIE",
     "color": "#fff",
     "imagen": "img/flash-42.png"
@@ -98,7 +98,7 @@
   {
     "nombre": "LORI BLACK 80",
     "descripcion": "Color 105",
-    "precio": "00.000",
+    "precio": 0,
     "etiqueta": "SUPERFÍCIE",
     "color": "#fff",
     "imagen": "img/LoriBlack105.png"
@@ -106,7 +106,7 @@
   {
     "nombre": "LORI BLACK 80",
     "descripcion": "Color 112",
-    "precio": "00.000",
+    "precio": 0,
     "etiqueta": "SUPERFÍCIE",
     "color": "#fff",
     "imagen": "img/Lori Black112.png"
@@ -114,7 +114,7 @@
   {
     "nombre": "Lori Face 65",
     "descripcion": "Color CHAAAMA",
-    "precio": "00.000",
+    "precio": 0,
     "etiqueta": "SUPERFÍCIE",
     "color": "#fff",
     "imagen": "img/face-65-chama.png"
@@ -122,7 +122,7 @@
   {
     "nombre": "Lori Face 65",
     "descripcion": "Color TEQUILA",
-    "precio": "00.000",
+    "precio": 0,
     "etiqueta": "SUPERFÍCIE",
     "color": "#fff",
     "imagen": "img/face-65-tequila.png"
@@ -130,7 +130,7 @@
   {
     "nombre": "  Laker 55",
     "descripcion": "Color Iron ",
-    "precio": "00.000",
+    "precio": 0,
     "etiqueta": "SUPERFÍCIE",
     "color": "#fff",
     "imagen": "img/laker-iron.png"
@@ -138,7 +138,7 @@
   {
     "nombre": "Laker 55",
     "descripcion": "Color skeleton ",
-    "precio": "00.000",
+    "precio": 0,
     "etiqueta": "SUPERFÍCIE",
     "color": "#fff",
     "imagen": "img/laker-skeleton.png"
@@ -146,7 +146,7 @@
   {
     "nombre": "UP X",
     "descripcion": "Color LIMA ",
-    "precio": "00.000",
+    "precio": 0,
     "etiqueta": "SUPERFÍCIE",
     "color": "#fff",
     "imagen": "img/up-x-110-lima.png"
@@ -154,7 +154,7 @@
   {
     "nombre": " UP X",
     "descripcion": "Color SOLAR ",
-    "precio": "00.000",
+    "precio": 0,
     "etiqueta": "SUPERFÍCIE",
     "color": "#fff",
     "imagen": "img/up-x-110-solar.png"
@@ -162,7 +162,7 @@
   {
     "nombre": " Brutal 95 ZN",
     "descripcion": "Color Chaaama ",
-    "precio": "00.000",
+    "precio": 0,
     "etiqueta": "SUPERFÍCIE",
     "color": "#fff",
     "imagen": "img/brutal-95-zn-chama.png"
@@ -170,7 +170,7 @@
   {
     "nombre": "Brutal 95 ZN",
     "descripcion": "Color Sunset ",
-    "precio": "00.000",
+    "precio": 0,
     "etiqueta": "SUPERFÍCIE",
     "color": "#fff",
     "imagen": "img/brutal-95-zn-sunset.png"
