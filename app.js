@@ -21,10 +21,10 @@ fetch("productos.json")
           <a class="btn-whatsapp" href="whatsapp://send?phone=595973585691&text=${mensaje}">
       📦 Pedido
     </a>
-    <a class="btn-whatsapp" 
-   href="intent://send?phone=595973585691&text=Hola#Intent;scheme=whatsapp;package=com.whatsapp;end">
-   📦 Pedido
-</a>
+ <a class="btn-whatsapp" 
+       href="intent://send?phone=595973585691&text=${mensaje}#Intent;scheme=whatsapp;package=com.whatsapp;end">
+      📦 Pedido
+    </a>
         </div>
       `;
 
