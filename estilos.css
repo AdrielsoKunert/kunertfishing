@@ -16,12 +16,22 @@
   }
 
   html { scroll-behavior: smooth; }
+  html, body {
+     height: 100%;
+     margin: 0;
+  }
 
   body {
     font-family: var(--font-body);
     background: var(--light);
     color: var(--navy);
     overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1;
   }
 
   /* ── TOP BAR ── */
