@@ -16,7 +16,7 @@ fetch("productos.json")
           <h4>${prod.nombre}</h4>
           <p>${prod.descripcion}</p>
           <div class="price"> Gs. ${prod.precio.toFixed(3)}</div>
-          <button>VER MAIS</button>
+          <button>Pedidos</button>
         </div>
       `;
 
