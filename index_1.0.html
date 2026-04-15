@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kunert Fishing | Acessórios de Pesca</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;500;600;700&family=Barlow+Condensed:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="estilos.css" />
+    <link rel="icon" type="image/x-icon" href="favicons/favicon.ico" />
+  </head>
+  <body>
+    <main>
+ <!-- TOP BAR -->
+  
+  <div class="topbar">
+    <span>📍 Hernandarias | Paraguay</span>
+   <!-- <span>✦ Desde <span>2026</span> — Qualidade Premium em Acessórios de Pesca ✦</span>-->
+    <span>📞 (+595) 973 585-691</span>
+  </div>
+    
+    <!-- NAV -->
+    <nav>
+      <a href="#" class="nav-logo">
+        <img src="logo_kunert.png" alt="Kunert Fishing" class="logo-fish" />
+        <div>
+          <div class="logo-text">Kunert</div>
+          <span class="logo-sub">Fishing</span>
+        </div>
+      </a>
+      <ul class="nav-menu">
+        <li><a href="#" onclick="showSection('section-inicio', this)" class="active">Início</a></li>
+        <li><a href="#productos" onclick="showSection('section-iscas', this)">Iscas</a></li>
+        <li><a href="#torneos" onclick="showSection('section-torneos', this)">Torneos</a></li>
+      </ul>
+    </nav>
+    
+    <!-- INICIO --> 
+    <section id="section-inicio" class="products section active">
+        <div class="section-header">
+            <div class="section-eyebrow">Os favoritos dos pescadores</div>
+            <div class="section-title">DESTAQUES</div>
+            <div class="section-line"></div>
+      </div>
+    </section>
+    
+    <!-- PRODUCTS -->
+    <section id="section-iscas" class="products section ">
+      <div class="section-header">
+            <div class="section-eyebrow">Nuestros Productos</div>
+            <!--<div class="section-title">DESTAQUES</div>
+            <div class="section-line"></div>-->
+      </div>
+        <div class="grid" id="productos"></div>
+    </section>
+
+    <!-- TORNEO -->
+    <section id="section-torneos" class="products section" >
+      <div class="section-header">
+            <div class="section-eyebrow">Proximamente Torneos</div>
+            <!--<div class="section-title">DESTAQUES</div>
+            <div class="section-line"></div>-->
+      </div>
+    </section>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+      <div class="foot-bottom">
+        <span>© 2026 Kunert Fishing Ltda. Todos los derecho reservado.</span>
+        <span>Hernadarias — Paraguay</span>
+      </div>
+    </footer>
+
+    <!-- Modal (ponlo al final del body) -->
+    <div id="modal" class="modal" onclick="cerrarModal()">
+        <img id="modal-img" src="" alt="">
+    </div>
+    
+    <script>
+      function setTab(el) {
+        document
+          .querySelectorAll(".tab")
+          .forEach((t) => t.classList.remove("active"));
+        el.classList.add("active");
+      }
+      
+    </script>
+    
+    
+    <script src="section.js"></script>
+    <script src="app.js"></script>
+    <script src="modal.js"></script>
+    <script src="pedido.js"></script>
+    
+  </body>
+</html>
