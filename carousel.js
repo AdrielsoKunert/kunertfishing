@@ -1,5 +1,5 @@
 (function initCarousel() {
-  const CARD_W = 200; // 180px + 20px gap
+  const CARD_W = 200;
   const VISIBLE = 4;
   const track = document.getElementById('carousel-track');
   const dotsEl = document.getElementById('carousel-dots');
