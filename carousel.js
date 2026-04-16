@@ -1,52 +1,65 @@
+// carousel.js
 (function initCarousel() {
   const CARD_W = 200;
   const VISIBLE = 4;
-  const track = document.getElementById('carousel-track');
-  const dotsEl = document.getElementById('carousel-dots');
   let current = 0;
 
-  productos.forEach(p => {
-    const card = document.createElement('div');
-    card.className = 'carousel-card';
-    card.innerHTML = `
-      <div class="carousel-img-wrap">
-        <img src="${p.imagen}" alt="${p.nombre}">
-      </div>
-      <div class="carousel-name">${p.nombre}</div>
-      <div class="carousel-desc">${p.descripcion}</div>
-    `;
-    track.appendChild(card);
-  });
+  const track = document.getElementById('carousel-track');
+  const dotsEl = document.getElementById('carousel-dots');
+  if (!track || !dotsEl) return;
 
-  const numDots = Math.ceil(productos.length / VISIBLE);
-  for (let i = 0; i < numDots; i++) {
-    const d = document.createElement('div');
-    d.className = 'dot' + (i === 0 ? ' active' : '');
-    d.onclick = () => goTo(i * VISIBLE);
-    dotsEl.appendChild(d);
-  }
+  fetch('productos.json')
+    .then(res => res.json())
+    .then(productos => {
 
-  function goTo(idx) {
-    const max = productos.length - VISIBLE;
-    current = Math.max(0, Math.min(idx, max));
-    track.style.transform = `translateX(-${current * CARD_W}px)`;
-    document.querySelectorAll('.dot').forEach((d, i) => {
-      d.classList.toggle('active', Math.floor(current / VISIBLE) === i);
-    });
-  }
+      // Crear tarjetas
+      productos.forEach(p => {
+        const card = document.createElement('div');
+        card.className = 'carousel-card';
+        card.innerHTML = `
+          <div class="carousel-img-wrap">
+            <img src="${p.imagen}" alt="${p.nombre}" onerror="this.style.display='none'">
+          </div>
+          <div class="carousel-name">${p.nombre.trim()}</div>
+          <div class="carousel-desc">${p.descripcion.trim()}</div>
+        `;
+        track.appendChild(card);
+      });
 
-  document.getElementById('carousel-prev').onclick = () => goTo(current - VISIBLE);
-  document.getElementById('carousel-next').onclick = () => goTo(current + VISIBLE);
+      // Crear dots
+      const numDots = Math.ceil(productos.length / VISIBLE);
+      for (let i = 0; i < numDots; i++) {
+        const d = document.createElement('div');
+        d.className = 'dot' + (i === 0 ? ' active' : '');
+        d.onclick = () => goTo(i * VISIBLE);
+        dotsEl.appendChild(d);
+      }
 
-  let auto = setInterval(() => {
-    goTo(current + 1 > productos.length - VISIBLE ? 0 : current + 1);
-  }, 2800);
+      function goTo(idx) {
+        const max = productos.length - VISIBLE;
+        current = Math.max(0, Math.min(idx, max));
+        track.style.transform = `translateX(-${current * CARD_W}px)`;
+        document.querySelectorAll('#carousel-dots .dot').forEach((d, i) => {
+          d.classList.toggle('active', Math.floor(current / VISIBLE) === i);
+        });
+      }
 
-  track.addEventListener('mouseenter', () => clearInterval(auto));
-  track.addEventListener('mouseleave', () => {
-    auto = setInterval(() => {
-      goTo(current + 1 > productos.length - VISIBLE ? 0 : current + 1);
-    }, 2800);
-  });
-})();   
-  
+      document.getElementById('carousel-prev').onclick = () => goTo(current - VISIBLE);
+      document.getElementById('carousel-next').onclick = () => goTo(current + VISIBLE);
+
+      // Autoplay
+      let auto = setInterval(() => {
+        goTo(current + 1 > productos.length - VISIBLE ? 0 : current + 1);
+      }, 2800);
+
+      track.addEventListener('mouseenter', () => clearInterval(auto));
+      track.addEventListener('mouseleave', () => {
+        auto = setInterval(() => {
+          goTo(current + 1 > productos.length - VISIBLE ? 0 : current + 1);
+        }, 2800);
+      });
+
+    })
+    .catch(err => console.error('Error cargando productos.json en carousel:', err));
+
+})();
