@@ -1,9 +1,9 @@
+
 fetch("productos.json")
   .then((res) => res.json())
   .then((data) => {
     const contenedor = document.getElementById("productos");
-
-function initCarousel() {
+(function initCarousel() {
   const CARD_W = 200;
   const VISIBLE = 4;
   const track = document.getElementById('carousel-track');
@@ -53,5 +53,6 @@ function initCarousel() {
       goTo(current + 1 > productos.length - VISIBLE ? 0 : current + 1);
     }, 2800);
   });
-};
-});
+})();
+  });
+//   
