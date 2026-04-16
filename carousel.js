@@ -1,5 +1,5 @@
 // carousel.js
-(function initCarousel() {
+document.addEventListener('DOMContentLoaded', function () {
   const CARD_W = 200;
   const VISIBLE = 4;
   let current = 0;
@@ -12,7 +12,6 @@
     .then(res => res.json())
     .then(productos => {
 
-      // Crear tarjetas
       productos.forEach(p => {
         const card = document.createElement('div');
         card.className = 'carousel-card';
@@ -26,7 +25,6 @@
         track.appendChild(card);
       });
 
-      // Crear dots
       const numDots = Math.ceil(productos.length / VISIBLE);
       for (let i = 0; i < numDots; i++) {
         const d = document.createElement('div');
@@ -47,7 +45,6 @@
       document.getElementById('carousel-prev').onclick = () => goTo(current - VISIBLE);
       document.getElementById('carousel-next').onclick = () => goTo(current + VISIBLE);
 
-      // Autoplay
       let auto = setInterval(() => {
         goTo(current + 1 > productos.length - VISIBLE ? 0 : current + 1);
       }, 2800);
@@ -60,6 +57,5 @@
       });
 
     })
-    .catch(err => console.error('Error cargando productos.json en carousel:', err));
-
-})();
+    .catch(err => console.error('Error cargando productos.json:', err));
+});
