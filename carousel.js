@@ -53,6 +53,6 @@ fetch("productos.json")
       goTo(current + 1 > productos.length - VISIBLE ? 0 : current + 1);
     }, 2800);
   });
-})();
+});
   });
 //   
