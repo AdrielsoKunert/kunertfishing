@@ -84,34 +84,45 @@ function renderProximo(t) {
   `;
 }
 
-// ── Tarjeta de resultado ───────────────────────────────────────
+// ── Tarjeta de edición anterior (afiche + datos + galería) ─────
 function renderResultado(t) {
-  const { dia, mes, anio } = formatearFecha(t.fecha);
+  const fecha = new Date(t.fecha + 'T00:00:00')
+    .toLocaleDateString('es-PY', { day: 'numeric', month: 'long', year: 'numeric' });
   const medallas = ['🥇', '🥈', '🥉'];
-  const podio = t.podio.map((p, i) => `
-    <div class="podio-item podio-${p.puesto}">
-      <span class="podio-medalla">${medallas[i] || p.puesto}</span>
-      <span class="podio-nombre">${p.nombre}</span>
-      <span class="podio-detalle">${p.detalle}</span>
-    </div>
-  `).join('');
+
+  const chips = (t.etiquetas || []).map(c => `<span class="cat-tag">${c}</span>`).join('');
+
+  const podio = (t.podio && t.podio.length) ? `
+    <div class="podio">
+      ${t.podio.map((p, i) => `
+        <div class="podio-item podio-${p.puesto}">
+          <span class="podio-medalla">${medallas[i] || p.puesto}</span>
+          <span class="podio-nombre">${p.nombre}</span>
+          <span class="podio-detalle">${p.detalle || ''}</span>
+        </div>`).join('')}
+    </div>` : '';
+
+  const galeria = (t.galeria && t.galeria.length) ? `
+    <div class="torneo-galeria">
+      ${t.galeria.map(g => `<img src="${g.src}" alt="${g.alt || t.nombre}" loading="lazy" onclick="abrirModal(this)">`).join('')}
+    </div>` : '';
 
   return `
-    <div class="torneo-card torneo-resultado">
-      <div class="torneo-img-wrap">
-        ${imagenConFallback(t.imagen, t.nombre, 'torneo-img')}
-        <div class="resultado-overlay">
-          <span class="resultado-label">RESULTADO FINAL</span>
-        </div>
+    <article class="torneo-card torneo-edicion">
+      <div class="torneo-afiche">
+        <img src="${t.imagen}" alt="Afiche: ${t.nombre}" onclick="abrirModal(this)">
       </div>
       <div class="torneo-body">
+        ${t.organiza ? `<p class="torneo-organiza">${t.organiza}</p>` : ''}
         <h3 class="torneo-nombre">${t.nombre}</h3>
-        <p class="torneo-lugar">📍 ${t.lugar} — ${dia} ${mes} ${anio}</p>
-        <div class="podio">
-          ${podio}
-        </div>
+        <p class="torneo-lugar">📅 ${fecha}${t.lugar ? ` · 📍 ${t.lugar}` : ''}</p>
+        <p class="torneo-desc">${t.descripcion}</p>
+        <div class="torneo-cats">${chips}</div>
+        ${t.premio ? `<p class="torneo-premio">🏆 ${t.premio}</p>` : ''}
+        ${podio}
+        ${galeria}
       </div>
-    </div>
+    </article>
   `;
 }
 
@@ -160,7 +171,7 @@ async function cargarTorneos() {
       html += `<div class="torneos-seccion">
         <div class="torneos-seccion-title">
           <span class="seccion-linea"></span>
-          <span>RESULTADOS</span>
+          <span>EDICIONES ANTERIORES</span>
           <span class="seccion-linea"></span>
         </div>
         <div class="torneos-grid">
@@ -180,3 +191,5 @@ async function cargarTorneos() {
     contenedor.innerHTML = `<p class="torneos-error">⚠️ No se pudieron cargar los torneos. Intentá más tarde.</p>`;
   }
 }
+
+document.addEventListener('DOMContentLoaded', cargarTorneos);

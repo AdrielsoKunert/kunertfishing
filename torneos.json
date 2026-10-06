@@ -1,0 +1,22 @@
+{
+  "proximos": [],
+  "resultados": [
+    {
+      "nombre": "Primera edición del Torneo de Pesca del Tucunaré",
+      "organiza": "Kayakero del Este",
+      "fecha": "2026-09-13",
+      "descripcion": "Torneo de pesca deportiva en kayak, con medición y devolución de los peces. Una jornada para compartir con la comunidad pescadora y premiar a los tres primeros puestos.",
+      "etiquetas": ["Kayak", "Tucunaré", "100% deportivo", "Medición con devolución"],
+      "premio": "Premios para 1.º, 2.º y 3.er puesto",
+      "imagen": "img_torneo/afiche-1ra-edicion.webp",
+      "galeria": [
+        { "src": "img_torneo/foto-01.webp", "alt": "Participantes con sus medallas junto a la mesa de premios" },
+        { "src": "img_torneo/foto-02.webp", "alt": "Pescador con su medalla frente a la mesa de premios" },
+        { "src": "img_torneo/foto-03.webp", "alt": "Dos participantes con sus medallas en la premiación" },
+        { "src": "img_torneo/foto-04.webp", "alt": "Participante con medallas junto a la mesa de premios" },
+        { "src": "img_torneo/foto-05.webp", "alt": "Mesa de premios con medallas y accesorios de pesca" },
+        { "src": "img_torneo/foto-06.webp", "alt": "Kayaks en la orilla del arroyo" }
+      ]
+    }
+  ]
+}

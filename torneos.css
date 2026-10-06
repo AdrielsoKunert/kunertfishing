@@ -4,8 +4,7 @@
 ───────────────────────────────────────────────────────────── */
 
 /* ── Contenedor principal ── */
-#section-torneos {
-  padding: 48px 24px;
+#torneos-contenido {
   max-width: 1100px;
   margin: 0 auto;
 }
@@ -335,10 +334,6 @@
     grid-template-columns: 1fr;
   }
 
-  #section-torneos {
-    padding: 32px 16px;
-  }
-
   .torneo-footer {
     flex-direction: column;
     align-items: flex-start;
@@ -348,4 +343,61 @@
     width: 100%;
     justify-content: center;
   }
+}
+
+/* ── Edición anterior: afiche + datos + galería ── */
+.torneo-edicion {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  grid-column: 1 / -1;          /* ocupa todo el ancho del grid */
+}
+.torneo-edicion { overflow: visible; }
+.torneo-edicion:hover { transform: none; }
+
+/* el afiche acompaña al scroll mientras se ve la galería (el nav mide ~73px) */
+.torneo-afiche {
+  position: sticky;
+  top: 90px;
+  align-self: start;
+  background: #0a1628;
+  border-radius: 16px 0 0 16px;
+  overflow: hidden;
+}
+.torneo-afiche img {
+  display: block;
+  width: 100%;
+  height: auto;
+  cursor: zoom-in;
+}
+
+.torneo-organiza {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #d44a1a;
+  margin: 0 0 4px;
+}
+.torneo-edicion .torneo-nombre { font-size: 26px; margin-bottom: 8px; }
+
+.torneo-galeria {
+  columns: 3 150px;
+  column-gap: 10px;
+  margin-top: 20px;
+}
+.torneo-galeria img {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  break-inside: avoid;
+  cursor: zoom-in;
+}
+
+@media (max-width: 700px) {
+  .torneo-edicion { grid-template-columns: 1fr; }
+  .torneo-afiche { position: static; border-radius: 16px 16px 0 0; }
+  .torneo-edicion .torneo-nombre { font-size: 22px; }
+  .torneo-galeria { columns: 2 130px; }
 }
